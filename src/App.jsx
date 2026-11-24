@@ -4,6 +4,7 @@ import About from './pages/About';
 import Contact from './pages/Contact';
 import User from './pages/User';
 import NotFound from './pages/NotFound';
+import { ProductList } from './components/ProductList';
 
 function Header() {
   return (
@@ -31,6 +32,7 @@ function App() {
     <BrowserRouter>
       <Header />
       <main style={{ padding: '20px' }}>
+        <ProductList />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
